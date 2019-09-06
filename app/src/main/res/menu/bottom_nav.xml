@@ -8,7 +8,7 @@
         android:title="Berita" />
     <item
         android:id="@+id/scannerFragment"
-        android:icon="@drawable/ic_scanner"
+        android:icon="@drawable/qrcode"
         android:title="Scanner" />
     <item
         android:id="@+id/notifikasiFragment"
