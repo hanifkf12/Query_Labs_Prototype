@@ -3,6 +3,7 @@ package com.hanifkf.query_labs_prototype;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         NavController navController = Navigation.findNavController(this,R.id.myNavHostFragment);
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.beritaFragment,R.id.scannerFragment,R.id.notifikasiFragment,R.id.profilFragment).build();
+        NavigationUI.setupActionBarWithNavController(this,navController, appBarConfiguration);
         NavigationUI.setupWithNavController(bottomNav, navController);
     }
 

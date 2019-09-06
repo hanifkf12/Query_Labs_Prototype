@@ -8,21 +8,21 @@
     <fragment
         android:id="@+id/beritaFragment"
         android:name="com.hanifkf.query_labs_prototype.view.BeritaFragment"
-        android:label="fragment_berita"
+        android:label="Berita"
         tools:layout="@layout/fragment_berita" />
     <fragment
         android:id="@+id/scannerFragment"
         android:name="com.hanifkf.query_labs_prototype.view.ScannerFragment"
-        android:label="fragment_scanner"
+        android:label="Scanner"
         tools:layout="@layout/fragment_scanner" />
     <fragment
         android:id="@+id/notifikasiFragment"
         android:name="com.hanifkf.query_labs_prototype.view.NotifikasiFragment"
-        android:label="fragment_notifikasi"
+        android:label="Notifikasi"
         tools:layout="@layout/fragment_notifikasi" />
     <fragment
         android:id="@+id/profilFragment"
         android:name="com.hanifkf.query_labs_prototype.view.ProfilFragment"
-        android:label="fragment_profil"
+        android:label="Profil"
         tools:layout="@layout/fragment_profil" />
 </navigation>
