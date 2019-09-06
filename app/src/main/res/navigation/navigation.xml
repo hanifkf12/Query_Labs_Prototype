@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/beritaFragment">
+
+    <fragment
+        android:id="@+id/beritaFragment"
+        android:name="com.hanifkf.query_labs_prototype.BeritaFragment"
+        android:label="fragment_berita"
+        tools:layout="@layout/fragment_berita" />
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.hanifkf.query_labs_prototype.ScannerFragment"
+        android:label="fragment_scanner"
+        tools:layout="@layout/fragment_scanner" />
+    <fragment
+        android:id="@+id/notifikasiFragment"
+        android:name="com.hanifkf.query_labs_prototype.NotifikasiFragment"
+        android:label="fragment_notifikasi"
+        tools:layout="@layout/fragment_notifikasi" />
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.hanifkf.query_labs_prototype.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+</navigation>
