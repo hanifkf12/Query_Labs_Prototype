@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/beritaFragment"
-        android:name="com.hanifkf.query_labs_prototype.BeritaFragment"
+        android:name="com.hanifkf.query_labs_prototype.view.BeritaFragment"
         android:label="fragment_berita"
         tools:layout="@layout/fragment_berita" />
     <fragment
         android:id="@+id/scannerFragment"
-        android:name="com.hanifkf.query_labs_prototype.ScannerFragment"
+        android:name="com.hanifkf.query_labs_prototype.view.ScannerFragment"
         android:label="fragment_scanner"
         tools:layout="@layout/fragment_scanner" />
     <fragment
         android:id="@+id/notifikasiFragment"
-        android:name="com.hanifkf.query_labs_prototype.NotifikasiFragment"
+        android:name="com.hanifkf.query_labs_prototype.view.NotifikasiFragment"
         android:label="fragment_notifikasi"
         tools:layout="@layout/fragment_notifikasi" />
     <fragment
         android:id="@+id/profilFragment"
-        android:name="com.hanifkf.query_labs_prototype.ProfilFragment"
+        android:name="com.hanifkf.query_labs_prototype.view.ProfilFragment"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profil" />
 </navigation>
