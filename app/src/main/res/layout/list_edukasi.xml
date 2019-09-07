@@ -1,65 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:weightSum="1">
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="0dp"
-            android:orientation="vertical"
-            android:layout_weight="0.7">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:weightSum="1">
 
-            <TextView
-                android:id="@+id/title_category_list"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_medium"
-                android:gravity="start"
-                android:textColor="@color/colorGreyDark"
-                android:textSize="16sp"
-                android:paddingEnd="16dp"
-                android:layout_marginBottom="4dp"
-                android:textStyle="bold"
-                tools:text= "Title Category"/>
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="0dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="0.7">
 
-            <TextView
-                android:id="@+id/desc_category_list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/opensans_semibold"
-                android:gravity="start"
-                android:maxLines="2"
-                android:ellipsize="end"
-                android:lineSpacingMultiplier="1.5"
-                android:textColor="@color/colorGrey"
-                android:paddingEnd="16dp"
-                android:textSize="14sp"
-                android:text="@string/lorem_ipsum_full" />
+                <TextView
+                    android:id="@+id/title_edukasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="start"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:paddingEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:textStyle="bold"
+                    tools:text= "Title Category"/>
+
+                <TextView
+                    android:id="@+id/desc_edukasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/colorGrey"
+                    android:paddingEnd="16dp"
+                    android:textSize="12sp"
+                    android:text="@string/lorem_ipsum_full" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_edukasi"
+                android:layout_width="0dp"
+                android:layout_height="108dp"
+                android:layout_weight="0.3"
+                android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                android:src="@color/colorGrey"
+                tools:src="@color/colorGrey"/>
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/image_category_list"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="0.3"
-            android:layout_marginEnd="16dp"
-            android:scaleType="centerCrop"
-            android:src="@color/colorGrey"
-            tools:src="@color/colorGrey"/>
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

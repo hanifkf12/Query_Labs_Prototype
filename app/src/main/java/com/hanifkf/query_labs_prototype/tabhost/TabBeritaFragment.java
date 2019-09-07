@@ -42,9 +42,9 @@ public class TabBeritaFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView mList = view.findViewById(R.id.recycler_news);
         List<Berita> beritaArrayList = new ArrayList<>();
-        beritaArrayList.add(new Berita(R.mipmap.ic_launcher, "Lorem Ipsum", "23 Jam Lalu", R.color.colorGrey, "Lorem ipsum", "Lorem ipsum", "14 suka", "1 Komentar", "0 Bagikan"));
-        beritaArrayList.add(new Berita(R.mipmap.ic_launcher, "Lorem Ipsum", "23 Jam Lalu", R.color.colorGrey, "Lorem ipsum", "Lorem ipsum", "14 suka", "1 Komentar", "0 Bagikan"));
-        beritaArrayList.add(new Berita(R.mipmap.ic_launcher, "Lorem Ipsum", "23 Jam Lalu", R.color.colorGrey, "Lorem ipsum", "Lorem ipsum", "14 suka", "1 Komentar", "0 Bagikan"));
+        beritaArrayList.add(new Berita(R.drawable.pic2, "Mark Harry", "2 Jam yang Lalu", R.color.colorGrey, "Lorem ipsum", "Lorem ipsum", "2 suka", "1 Komentar", "0 Bagikan"));
+        beritaArrayList.add(new Berita(R.drawable.pic3, "George Moss", "12 Jam yang Lalu", R.color.colorGrey, "Lorem ipsum", "Lorem ipsum", "7 suka", "0 Komentar", "12 Bagikan"));
+        beritaArrayList.add(new Berita(R.drawable.pic4, "Anna Jones", "23 Jam yang Lalu", R.color.colorGrey, "Lorem ipsum", "Lorem ipsum", "14 suka", "0 Komentar", "36 Bagikan"));
         BeritaAdapter beritaAdapter = new BeritaAdapter(beritaArrayList, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {

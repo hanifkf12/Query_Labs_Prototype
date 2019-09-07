@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/beritaFragment"
         android:name="com.hanifkf.query_labs_prototype.view.BeritaFragment"
-        android:label="Berita"
+        android:label="Query Lab"
         tools:layout="@layout/fragment_berita" />
     <fragment
         android:id="@+id/scannerFragment"

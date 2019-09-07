@@ -47,17 +47,12 @@ public class BeritaFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         viewPager = view.findViewById(R.id.viewpager);
         tabLayout = view.findViewById(R.id.tabs);
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
         setupViewPager(viewPager);
         tabLayout.setupWithViewPager(viewPager);
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new TabBeritaFragment(), "Berita");
         adapter.addFragment(new TabEdukasiFragment(), "Edukasi");
         viewPager.setAdapter(adapter);

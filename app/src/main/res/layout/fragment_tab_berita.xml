@@ -1,13 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tabhost.TabBeritaFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".tabhost.TabBeritaFragment"
+    android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_news"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:clipToPadding="false"
+                app:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="128dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="16dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorWhite"
+                        android:text="Semua Postingan"/>
+
+                    <Button
+                        android:layout_width="58dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="16dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:background="#F7F7F7"
+                        android:textColor="#A7A7A7"
+                        android:text="Kirim"/>
+
+                    <Button
+                        android:layout_width="96dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:background="#F7F7F7"
+                        android:textColor="#A7A7A7"
+                        android:text="Pertanyaan"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:clipToPadding="false"
+                app:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/me"
+                        android:layout_margin="16dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="12sp"
+                            android:textColor="#C7C7C7"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Berbagi pertanyaan atau pembaruan"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentEnd="true"
+                            android:tint="@color/colorPrimary"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/ic_add_black_24dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
