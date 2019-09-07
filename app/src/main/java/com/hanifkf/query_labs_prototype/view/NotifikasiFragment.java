@@ -45,6 +45,7 @@ public class NotifikasiFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        RecyclerView rcNotif = view.findViewById(R.id.rc_notif);
         listNotif = new ArrayList<>();
         listNotif.add(new Notifikasi(R.drawable.johndoe,"John Doe","Menjadi Teman Anda","4 Jam yang Lalu"));
         listNotif.add(new Notifikasi(R.drawable.pic2,"Mark Harry","Menjadi Teman Anda","8 Jam yang Lalu"));
@@ -56,7 +57,7 @@ public class NotifikasiFragment extends Fragment {
                 Toast.makeText(getActivity(),listNotif.get(position).getNama(),Toast.LENGTH_SHORT).show();
             }
         });
-        RecyclerView rcNotif = view.findViewById(R.id.rc_notif);
+
         LinearLayoutManager linearLayout = new LinearLayoutManager(getActivity());
         rcNotif.setLayoutManager(linearLayout);
         rcNotif.setAdapter(adapter);
