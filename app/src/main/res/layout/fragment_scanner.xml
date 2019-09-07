@@ -3,12 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ScannerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Scanner" />
+        app:autoFocusButtonColor="@color/colorPrimary"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@color/colorPrimary"
+        app:flashButtonVisible="true"
+        app:frameColor="@color/colorPrimary"
+        app:frameCornersSize="20dp"
+        app:frameCornersRadius="0dp"
+        app:frameAspectRatioWidth="1"
+        app:frameAspectRatioHeight="1"
+        app:frameSize="0.5"
+        app:frameThickness="6dp"
+        app:maskColor="#00000000" />
 
 </FrameLayout>

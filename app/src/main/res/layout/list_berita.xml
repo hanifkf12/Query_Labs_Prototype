@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/click_timeline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_news"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@color/colorGrey"
+                    android:layout_margin="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/username_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start"
+                        android:layout_marginTop="16dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:maxLines="2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text= "@string/lorem_ipsum_short"/>
+
+                    <TextView
+                        android:id="@+id/timestamp_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="14sp"
+                        tools:text="@string/lorem_ipsum_short" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ProgressBar
+                    android:id="@+id/progress_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/image_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@color/colorGrey"
+                    tools:src="@color/colorGrey"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="start"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="1"
+                    android:textColor="@color/colorGreyDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text= "@string/lorem_ipsum_full"/>
+
+                <TextView
+                    android:id="@+id/desc_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"
+                    tools:text="@string/lorem_ipsum_full" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/like_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/Like"/>
+
+                <TextView
+                    android:id="@+id/comment_news"
+                    android:layout_toEndOf="@id/like_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/Comment"/>
+
+                <TextView
+                    android:id="@+id/share_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="16dp"
+                    android:text="@string/Share"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="#f1f1f1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/thumb"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:paddingBottom="4dp"
+                        android:src="@drawable/ic_thumb_up_black_24dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/thumb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="0dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/suka"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/thumb3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="4dp"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_toEndOf="@+id/thumb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="0dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/komentari"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RelativeOverlap">
+
+                    <ImageView
+                        android:id="@+id/thumb4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:paddingBottom="4dp"
+                        android:src="@drawable/ic_share_black_24dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_toEndOf="@+id/thumb4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="0dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/bagikan"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

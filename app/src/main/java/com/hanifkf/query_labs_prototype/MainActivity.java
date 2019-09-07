@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setElevation(0);
         NavController navController = Navigation.findNavController(this,R.id.myNavHostFragment);
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.beritaFragment,R.id.scannerFragment,R.id.notifikasiFragment,R.id.profilFragment).build();

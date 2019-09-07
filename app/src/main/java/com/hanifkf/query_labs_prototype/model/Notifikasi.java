@@ -1,6 +1,7 @@
 package com.hanifkf.query_labs_prototype.model;
 
 public class Notifikasi {
+
     int foto;
     String nama;
     String content;
