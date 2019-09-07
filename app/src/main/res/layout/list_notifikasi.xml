@@ -44,6 +44,7 @@
                 android:id="@+id/time_notif"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="12sp"
                 android:text="3 jam yang lalu" />
 
         </LinearLayout>
