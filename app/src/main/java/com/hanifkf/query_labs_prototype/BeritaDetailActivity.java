@@ -10,10 +10,13 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.codesgood.views.JustifiedTextView;
+
 public class BeritaDetailActivity extends AppCompatActivity {
 
     CircleImageView pic;
-    TextView name, time, title, desc, like, comment, share;
+    TextView name, time, title, like, comment, share;
+    JustifiedTextView desc;
     ImageView banner;
 
     @Override
