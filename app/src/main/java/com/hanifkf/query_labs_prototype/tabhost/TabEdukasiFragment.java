@@ -14,6 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hanifkf.query_labs_prototype.ListObatActivity;
+import com.hanifkf.query_labs_prototype.ModulActivity;
 import com.hanifkf.query_labs_prototype.R;
 import com.hanifkf.query_labs_prototype.WebViewActivity;
 import com.hanifkf.query_labs_prototype.adapter.BeritaAdapter;
@@ -54,7 +56,13 @@ public class TabEdukasiFragment extends Fragment {
         EdukasiAdapter edukasiAdapter = new EdukasiAdapter(edukasiArrayList, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {
-                if(position == 2){
+                if(position == 0){
+                    Intent intent = new Intent(getContext(), ModulActivity.class);
+                    startActivity(intent);
+                }if(position == 1){
+                    Intent intent = new Intent(getContext(), ListObatActivity.class);
+                    startActivity(intent);
+                }if(position == 2){
                     Intent intent = new Intent(getContext(), WebViewActivity.class);
                     startActivity(intent);
                 }

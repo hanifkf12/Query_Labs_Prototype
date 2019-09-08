@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.hanifkf.query_labs_prototype"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -42,4 +42,10 @@ dependencies {
 
     //justified text
     implementation 'com.codesgood:justifiedtextview:1.1.0'
+
+    //Search View
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+
+    //Sliding Panel
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
 }

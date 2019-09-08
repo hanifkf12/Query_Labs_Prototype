@@ -12,4 +12,25 @@
     <string name="komentari">KOMENTAR</string>
     <string name="bagikan">BAGIKAN</string>
 
+    <string-array name="informasi_obat">
+        <item>0,9% SODIUM CHLORIDE</item>
+        <item>3 TC</item>
+        <item>3 TC-HBV</item>
+        <item>4-EPEEDO-50</item>
+        <item>5% DEXTROSE</item>
+        <item>50 D</item>
+        <item>8Y</item>
+        <item>A-B VASK 10</item>
+        <item>A-B VASK 5</item>
+        <item>A-BE</item>
+        <item>AAFACT 1000 IU</item>
+        <item>AAFACT 500 IU</item>
+        <item>ABAJOS</item>
+        <item>ABBOTIC</item>
+        <item>ABBOTIC XL</item>
+        <item>ABILIFY</item>
+        <item>ABILIFY DISCMELT</item>
+        <item>ABINGEM 1000</item>
+    </string-array>
+
 </resources>

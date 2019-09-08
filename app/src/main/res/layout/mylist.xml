@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mylist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/opensans_semibold"
+        android:gravity="start"
+        android:lineSpacingMultiplier="1.5"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:text="@string/lorem_ipsum_short" />
+
+</LinearLayout>
