@@ -1,6 +1,7 @@
 package com.hanifkf.query_labs_prototype.tabhost;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hanifkf.query_labs_prototype.R;
+import com.hanifkf.query_labs_prototype.WebViewActivity;
 import com.hanifkf.query_labs_prototype.adapter.BeritaAdapter;
 import com.hanifkf.query_labs_prototype.adapter.EdukasiAdapter;
 import com.hanifkf.query_labs_prototype.model.Berita;
@@ -52,7 +54,10 @@ public class TabEdukasiFragment extends Fragment {
         EdukasiAdapter edukasiAdapter = new EdukasiAdapter(edukasiArrayList, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {
-
+                if(position == 2){
+                    Intent intent = new Intent(getContext(), WebViewActivity.class);
+                    startActivity(intent);
+                }
             }
         });
         mList.setLayoutManager(new LinearLayoutManager(getContext()));

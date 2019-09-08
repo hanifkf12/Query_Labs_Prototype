@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.codesgood.views.JustifiedTextView;
 import com.hanifkf.query_labs_prototype.R;
 import com.hanifkf.query_labs_prototype.model.Berita;
 import com.hanifkf.query_labs_prototype.utils.CustomItemClickListener;
@@ -61,7 +62,8 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
 
     class BeritaViewHolder extends RecyclerView.ViewHolder {
 
-        TextView username, timestamp, title, desc, countLike, countComment, countShare;
+        TextView username, timestamp, title, countLike, countComment, countShare;
+        JustifiedTextView desc;
         CircleImageView profile;
         ImageView banner;
 
