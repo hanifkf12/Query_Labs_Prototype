@@ -48,9 +48,9 @@ public class TabEdukasiFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView mList = view.findViewById(R.id.recycler_edukasi);
         List<Edukasi> edukasiArrayList = new ArrayList<>();
-        edukasiArrayList.add(new Edukasi("SKP", "Ikuti Modul SKP Pembelajaran Profesi disini", R.color.colorGrey));
-        edukasiArrayList.add(new Edukasi("Informasi Obat (A-Z)", "Cari Informasi lengkap mengenai sebuah produk obat", R.color.colorGrey));
-        edukasiArrayList.add(new Edukasi("Laporkan Efek Samping", "Lapor efek samping obat langsung ke Pusat Informasi Obat Nasional", R.color.colorGrey));
+        edukasiArrayList.add(new Edukasi("SKP", "Ikuti Modul SKP Pembelajaran Profesi disini", R.drawable.ic_book_black_24dp));
+        edukasiArrayList.add(new Edukasi("Informasi Obat (A-Z)", "Cari Informasi lengkap mengenai sebuah produk obat", R.drawable.ic_healing_black_24dp));
+        edukasiArrayList.add(new Edukasi("Laporkan Efek Samping", "Lapor efek samping obat langsung ke Pusat Informasi Obat Nasional", R.drawable.ic_report_black_24dp));
         EdukasiAdapter edukasiAdapter = new EdukasiAdapter(edukasiArrayList, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {

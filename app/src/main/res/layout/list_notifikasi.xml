@@ -13,8 +13,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profil_foto_notif"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
             android:src="@mipmap/ic_launcher_round" />
 
         <LinearLayout
@@ -23,13 +23,13 @@
             android:layout_marginLeft="12dp"
             android:layout_toRightOf="@+id/profil_foto_notif"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/name_notif"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="Hanif"
-                android:layout_marginTop="4dp"
                 android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorGreyDark"
                 android:textSize="16sp" />
@@ -39,10 +39,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/opensans_semibold"
                 android:layout_gravity="center_vertical"
                 android:text="Menambahkan kata saya"
-                android:textSize="13sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/time_notif"
@@ -51,6 +51,7 @@
                 android:textSize="12sp"
                 android:fontFamily="@font/roboto_medium"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/colorGreyLight"
                 android:text="3 jam yang lalu" />
 
         </LinearLayout>

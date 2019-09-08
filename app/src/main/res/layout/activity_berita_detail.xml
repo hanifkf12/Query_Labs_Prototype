@@ -71,11 +71,11 @@
                             android:id="@+id/username_news_detail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginBottom="4dp"
                             android:ellipsize="end"
                             android:fontFamily="@font/roboto_medium"
                             android:gravity="start"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="20dp"
                             android:lineSpacingMultiplier="1.5"
                             android:maxLines="2"
                             android:textColor="@color/colorPrimary"
@@ -146,7 +146,6 @@
                         android:lineSpacingMultiplier="1.5"
                         android:fontFamily="@font/opensans_semibold"
                         android:gravity="fill_horizontal"
-                        android:textColor="@color/colorGrey"
                         android:textSize="12sp"
                         tools:text="@string/lorem_ipsum_full" />
 
@@ -163,6 +162,7 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="16dp"
                         android:paddingEnd="16dp"
+                        android:textColor="@color/colorGreyLight"
                         android:text="@string/Like"/>
 
                     <TextView
@@ -172,6 +172,7 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="0dp"
                         android:paddingEnd="16dp"
+                        android:textColor="@color/colorGreyLight"
                         android:text="@string/Comment"/>
 
                     <TextView
@@ -179,6 +180,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="16dp"
+                        android:textColor="@color/colorGreyLight"
                         android:layout_alignParentEnd="true"
                         android:paddingEnd="16dp"
                         android:text="@string/Share"
@@ -213,7 +215,7 @@
                             android:paddingEnd="0dp"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:fontFamily="@font/opensans_semibold"
+                            android:fontFamily="@font/roboto_medium"
                             android:text="@string/suka"/>
 
                     </RelativeLayout>
@@ -242,7 +244,7 @@
                             android:textColor="@color/colorPrimary"
                             android:textStyle="bold"
                             android:textSize="12sp"
-                            android:fontFamily="@font/opensans_semibold"
+                            android:fontFamily="@font/roboto_medium"
                             android:text="@string/komentari"/>
 
                     </RelativeLayout>
@@ -269,7 +271,7 @@
                             android:paddingEnd="0dp"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:fontFamily="@font/opensans_semibold"
+                            android:fontFamily="@font/roboto_medium"
                             android:text="@string/bagikan"/>
 
                     </RelativeLayout>
